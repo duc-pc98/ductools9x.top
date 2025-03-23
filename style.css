@@ -1,0 +1,73 @@
+/* Reset cơ bản */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #25f4ee;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.input-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input[type="url"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    color: white;
+    background: #fe2c55;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d91e45;
+}
+
+/* Kết quả */
+#result {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+}
