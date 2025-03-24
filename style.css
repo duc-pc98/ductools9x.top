@@ -17,13 +17,40 @@ body {
     min-height: 100vh;
     text-align: center;
     padding: 20px;
+    flex-direction: column; /* Để chữ chạy hiển thị phía trên */
+}
+
+/* Hiệu ứng chữ chạy (marquee) */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background: #ff4d4d; /* Nền nổi bật */
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap; /* Không xuống dòng */
+    animation: marquee 15s linear infinite; /* Tốc độ và kiểu chạy */
+    font-size: 16px;
+    color: white;
+}
+
+/* Animation cho chữ chạy */
+@keyframes marquee {
+    from {
+        transform: translatex(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 /* Khối nội dung chính */
-
 .container {
-    max-width: 600px;
-    width: 100%;
+    max-width: 350px;
+    padding: 0 20px;
 }
 
 /* Tiêu đề chính */
