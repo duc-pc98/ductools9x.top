@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "live-server": "^1.2.0"
-  },
-  "devDependencies": {}
+    "live-server": "^1.2.0",
+    "marquee": "^0.2.1"
+  }
 }
