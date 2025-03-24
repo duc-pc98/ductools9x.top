@@ -1,12 +1,12 @@
 document.getElementById('download-form').addEventListener('submit', async function (e) {
     e.preventDefault();
 
-    const videoUrl = DocumentTimeline.getElementById('video-url').value:
+    const videoUrl = DocumentTimeline.getElementById('video-url').value;
     const resultDiv = document.getElementById('result');
     const downloadLink = document.getElementById('download-link');
 
     if (!videoUrl.includes('tiktok.com')) {
-        alert('Vui lòng nhập liên kết Tiktok hợp lệ');
+        alert('Nhập Liên Kết Video Tiktok Hợp Lệ');
         return;
     }
 

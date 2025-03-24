@@ -15,7 +15,7 @@ body {
     font-family: Arial, sans-serif;
     color: white;
     overflow: hidden;
-    background: linear-gradient(135deg, #ff2a6d, #8c1eff, #00f2ea);
+    background: linear-gradient(to right, #E6E6FA, #FFFFFF);
 }
 
 @keyframes neonAnimation {
@@ -38,7 +38,7 @@ body {
 
 /* Header */
 header {
-    background: #25f4ee;
+    background: #F0F8FF;
     color: white;
     padding: 20px 0;
 }
