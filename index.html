@@ -4,36 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Ductools9x - Tải Video Tiktok Không Logo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Ductools9x - Tải Video Tiktok Không Logo</h1>
-    </header>
+    <div class="container">
+        <h1 class="title">Ductools9x - Tải Video Tiktok Không Logo</h1>
+        <p class="description">Tải video Tiktok không dính logo miễn phí. Dán URL vào ô bên dưới và nhấn "Tải Xuống".</p>
 
-    <main>
-        <section class="input-section">
-            <h2>Tải Video Tiktok Không Dính Logo Miễn Phí</h2>
-            <p>Dán Url video Tiktok vào ô bên dưới và nhấn "Tải xuống".</p>
+        <div class="input-group">
+            <input type="text" placeholder="Dán URL Tiktok vào đây..." id="urlInput">
+            <button class="btn" onclick="downloadVideo()" id="downloadBtn">Tải Xuống</button>
+            <!-- Hiệu ứng loading -->
+            <div id="loading" class="spinner hidden"></div>
+        </div>
 
-            <form id="download-form">
-                <input type="url" id="video-url" placeholder="Dán liên kết Tiktok Vào Đây..." required>
-                <button type="submit">Tải xuống</button>
-            </form>
+        <footer class="footer">
+            ♡ 2025 ductools9x. All Rights Reserved.
+        </footer>
+    </div>
 
-            <div id="result" class="hidden">
-                <h3>Kết quả tải xuống:</h3>
-                <a id="download-link" href="#" target="_blank">Tải video tại đây</a>
-            </div>
-        </section>
-    </main>
+    <script>
+        function downloadVideo() {
+            const url = document.getElementById('urlInput').value;
+            const button = document.getElementById('downloadBtn');
+            const spinner = document.getElementById('loading');
 
-    <footer>
-        <p>&copy; 2025 ductools9x. All Rights Reserved.</p>
-    </footer>
+            if (!url) {
+                alert('Vui lòng dán URL Tiktok');
+                return;
+            }
 
-    <script src="script.js"></script>
+            // Hiện spinner + vô hiệu hóa nút
+            button.disabled = true;
+            button.innerText = "Đang xử lý...";
+            spinner.classList.remove('hidden');
+
+            // Giả lập thời gian xử lý ( 3 giây )
+            setTimeout(() => {
+                alert('Đã xử lý xong video từ: ${url}');
+
+                // Ẩn spinner + kích hoạt lại nút
+                button.disabled = false;
+                button.innerText = "Tải xuống";
+                spinner.classList.add('hidden');
+            }, 3000);
+        }
+    </script>
 </body>
+
 </html>
